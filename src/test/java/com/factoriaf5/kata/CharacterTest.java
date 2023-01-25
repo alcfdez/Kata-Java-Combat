@@ -6,11 +6,23 @@ import org.junit.jupiter.api.Test;
 
 public class CharacterTest {
     @Test
-    public void character_have_1000_health_level_1_and_is_alive() {
+    public void character_init() {
         Character myCharacter = new Character ();
 assertEquals(myCharacter.initHealth, 1000);
-assertEquals(myCharacter.initLevel, 1);     assertEquals(myCharacter.alive,true)
+assertEquals(myCharacter.initLevel, 1);     
+assertEquals(myCharacter.alive,true);
         
     }
 
+    @Test
+    public void character_Damage_rest_Health() {
+        Character firstCharacter = new Character ();
+        Character secondCharacter = new Character ();
+        firstCharacter.attackCharacter(secondCharacter);
+        assertEquals(), null);
+        
+    }
+
+
+    
 }
